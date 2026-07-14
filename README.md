@@ -1,6 +1,6 @@
 # Product OS
 
-Product OS is an operating system for an AI-assisted product organization. It combines specialist agent instructions, governance, product processes, vendor knowledge, reusable documentation, and working product experiments in one repository.
+Product OS is an operating system for an AI-assisted product organization. It combines specialist agent instructions, governance, product processes, reusable knowledge, documentation, and working product experiments in one repository.
 
 ## How the Organization Works
 
@@ -27,40 +27,38 @@ Founder
 | [`docs/document-owners.md`](docs/document-owners.md) | Primary owners, reviewers, contributors, and review cadence |
 | [`docs/process/WORKFLOW.md`](docs/process/WORKFLOW.md) | Lifecycle stages, required evidence, handoffs, and gates |
 | [`docs/process/PRODUCT-PLAYBOOK.md`](docs/process/PRODUCT-PLAYBOOK.md) | Practical standards for discovery, business cases, delivery, release, and learning |
-| [`04 Vendors/README.md`](04%20Vendors/README.md) | Shared vendor knowledge model, metadata and maintenance rules |
-| [`04 Vendors/Roaring/README.md`](04%20Vendors/Roaring/README.md) | Curated Roaring knowledge for products and integrations |
+| [`10 Knowledge/README.md`](10%20Knowledge/README.md) | Canonical structure for reusable organizational knowledge |
+| [`10 Knowledge/Vendors/README.md`](10%20Knowledge/Vendors/README.md) | Vendor knowledge model, metadata and maintenance rules |
+| [`10 Knowledge/Vendors/Roaring/README.md`](10%20Knowledge/Vendors/Roaring/README.md) | Curated Roaring knowledge for products and integrations |
 | [`Agents/product-director.md`](Agents/product-director.md) | Operating instructions for the Product Director |
 
 ## Repository Structure
 
 ```text
-Agents/       Specialist AI role instructions
-docs/         Company context, governance, product process, and standards
-04 Vendors/   Curated knowledge about external platforms and data providers
-apps/         Proofs of concept and product implementations
+Agents/        Specialist AI role instructions
+docs/          Company context, governance, product process, and standards
+10 Knowledge/  Reusable vendor, technology, business, product and UX knowledge
+apps/          Proofs of concept and product implementations
 ```
 
-## Vendor Knowledge Model
+## Knowledge Model
 
-Vendor knowledge is reusable and separate from product documentation.
+Knowledge is reusable and separate from product documentation.
 
 ```text
-04 Vendors/
+10 Knowledge/
 ├── README.md
-├── _templates/
-└── Roaring/
-    ├── README.md
-    ├── 01-PLATFORM-OVERVIEW.md
-    ├── 02-AUTHENTICATION.md
-    ├── 03-API-CATALOG.md
-    ├── 04-DATA-MODEL.md
-    ├── 05-INTEGRATION-PATTERNS.md
-    ├── 06-SUPEROFFICE-MAPPING.md
-    ├── 07-ERROR-HANDLING.md
-    ├── 08-SECURITY-PRIVACY.md
-    ├── 09-KNOWN-LIMITATIONS.md
-    └── 10-REFERENCES.md
+├── Vendors/
+│   ├── README.md
+│   ├── _templates/
+│   └── Roaring/
+├── Technologies/
+├── Product Management/
+├── Business/
+└── UX/
 ```
+
+Knowledge explains what the organization knows. Product folders explain what the organization builds. Agent files explain who performs the work. Governance documents explain how decisions are made.
 
 Official vendor documentation and signed agreements remain authoritative for endpoint details, licences, country coverage and permitted use. Product OS stores internal interpretation, architecture decisions, mappings, risks and operational knowledge.
 
