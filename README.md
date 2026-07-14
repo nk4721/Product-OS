@@ -1,95 +1,65 @@
 # Product OS
 
-Product OS is an operating system for an AI-assisted product organization. It combines specialist agent instructions, governance, product processes, reusable knowledge, documentation, and working product experiments in one repository.
-
-## How the Organization Works
-
-The Founder sets vision and approves major strategic, financial, legal, and irreversible decisions. The Product Director coordinates specialist agents and manages the product lifecycle from idea through discovery, delivery, launch, adoption, and learning.
-
-```text
-Founder
-└── Product Director
-    ├── Discovery and Customer Intelligence
-    ├── Business and Growth
-    ├── UX
-    ├── Engineering and Platform
-    ├── Data and AI
-    ├── Quality
-    └── Commercial and Customer Success
-```
+Product OS is an operating system for an AI-assisted product organization. It connects product work, reusable knowledge, governance, specialist agents and working implementations without duplicating the same information across folders.
 
 ## Start Here
 
-| Document | Purpose |
+| Area | Purpose |
 |---|---|
-| [`docs/company/TEAM-STRUCTURE.md`](docs/company/TEAM-STRUCTURE.md) | Roles, organization, collaboration, and decision rights |
-| [`docs/company/AI-GOVERNANCE.md`](docs/company/AI-GOVERNANCE.md) | Authority, safety, data governance, and human oversight |
-| [`docs/document-owners.md`](docs/document-owners.md) | Primary owners, reviewers, contributors, and review cadence |
-| [`docs/process/WORKFLOW.md`](docs/process/WORKFLOW.md) | Lifecycle stages, required evidence, handoffs, and gates |
-| [`docs/process/PRODUCT-PLAYBOOK.md`](docs/process/PRODUCT-PLAYBOOK.md) | Practical standards for discovery, business cases, delivery, release, and learning |
-| [`10 Knowledge/README.md`](10%20Knowledge/README.md) | Canonical structure for reusable organizational knowledge |
-| [`10 Knowledge/Vendors/README.md`](10%20Knowledge/Vendors/README.md) | Vendor knowledge model, metadata and maintenance rules |
-| [`10 Knowledge/Vendors/Roaring/README.md`](10%20Knowledge/Vendors/Roaring/README.md) | Curated Roaring knowledge for products and integrations |
-| [`Agents/product-director.md`](Agents/product-director.md) | Operating instructions for the Product Director |
+| [`projects/`](projects/README.md) | Portfolio index for current and completed initiatives |
+| [`apps/`](apps/README.md) | Customer-facing products, proofs of concept and implementations |
+| [`platform/`](platform/README.md) | Reusable internal technical foundations |
+| [`10 Knowledge/`](10%20Knowledge/README.md) | Reusable vendor and domain knowledge |
+| [`Agents/`](Agents/product-director.md) | Specialist AI role instructions |
+| [`docs/`](docs/process/WORKFLOW.md) | Governance, strategy, ownership and product process |
 
-## Repository Structure
+## Current Projects
 
-```text
-Agents/        Specialist AI role instructions
-docs/          Company context, governance, product process, and standards
-10 Knowledge/  Reusable vendor, technology, business, product and UX knowledge
-apps/          Proofs of concept and product implementations
-```
+### CRM Usage Analytics
 
-## Knowledge Model
+A proof of concept and business case for measuring SuperOffice CRM adoption by user and team.
 
-Knowledge is reusable and separate from product documentation.
+- [Portfolio entry](projects/README.md#crm-usage-analytics)
+- [Implementation](apps/crm-usage-analytics-poc/README.md)
+- [Business case](apps/crm-usage-analytics-poc/BUSINESS-CASE.md)
+- [Reusable CRM knowledge](10%20Knowledge/crm/README.md)
 
-```text
-10 Knowledge/
-├── README.md
-├── Vendors/
-│   ├── README.md
-│   ├── _templates/
-│   └── Roaring/
-├── Technologies/
-├── Product Management/
-├── Business/
-└── UX/
-```
+### Integration SDK
 
-Knowledge explains what the organization knows. Product folders explain what the organization builds. Agent files explain who performs the work. Governance documents explain how decisions are made.
+An internal shared foundation for supplier-specific SuperOffice applications.
 
-Official vendor documentation and signed agreements remain authoritative for endpoint details, licences, country coverage and permitted use. Product OS stores internal interpretation, architecture decisions, mappings, risks and operational knowledge.
+- [Portfolio entry](projects/README.md#integration-sdk)
+- [Platform foundation](platform/integration-sdk/README.md)
+- [Integration application strategy](docs/strategy/integration-app-suite.md)
+- [Vendor knowledge](10%20Knowledge/Vendors/README.md)
 
-## Product Lifecycle
+## Repository Model
 
 ```text
-Idea
-→ Discovery
-→ Business Case and Market Validation
-→ Solution Definition
-→ Build
-→ Quality and Release Readiness
-→ Go-to-Market and Launch
-→ Adoption, Measurement, and Learning
+projects/       What initiatives exist and their current status
+apps/           What is built for customers
+platform/       What is shared internally across applications
+10 Knowledge/   What the organization knows and reuses
+docs/           How decisions, strategy and delivery are governed
+Agents/         Who performs specialist work
 ```
 
-Each stage should have a named owner, documented evidence, explicit assumptions, measurable success criteria, and a recorded decision to proceed, proceed with conditions, pivot, park, or stop.
+A folder should exist only when it has a clear owner and useful content. Empty placeholders should not be created in advance.
+
+## Governance
+
+- [Team structure](docs/company/TEAM-STRUCTURE.md)
+- [AI governance](docs/company/AI-GOVERNANCE.md)
+- [Document ownership](docs/document-owners.md)
+- [Workflow](docs/process/WORKFLOW.md)
+- [Product playbook](docs/process/PRODUCT-PLAYBOOK.md)
 
 ## Working Principles
 
 - Start with a customer problem and a decision to enable.
-- Separate facts, evidence, assumptions, and recommendations.
-- Delegate specialist work to the appropriate agent.
-- Build the smallest responsible increment that creates value or learning.
-- Keep decisions traceable and documentation owned.
-- Protect privacy, security, contracts, licences, and customer confidentiality.
-- Keep supplier-specific products, credentials, data, and evidence separated when required.
-- Treat official vendor documentation as authoritative and verify endpoint-specific details before implementation.
-- Require human approval for material or irreversible decisions.
-- Improve Product OS after every completed initiative.
-
-## Current Product Work
-
-The repository includes a CRM Usage Analytics proof of concept for measuring SuperOffice CRM adoption by user and team, together with its technical implementation and business case under `apps/crm-usage-analytics-poc/`.
+- Separate facts, evidence, assumptions and recommendations.
+- Link shared knowledge rather than duplicating it inside products.
+- Keep supplier-specific products, credentials, data and entitlements separated.
+- Build shared platform components only when reuse is demonstrated.
+- Keep project status visible in `projects/README.md`.
+- Remove empty or obsolete folders instead of preserving speculative structure.
