@@ -1,6 +1,6 @@
 # Product OS
 
-Product OS is an operating system for an AI-assisted product organization. It combines specialist agent instructions, governance, product processes, reusable documentation, and working product experiments in one repository.
+Product OS is an operating system for an AI-assisted product organization. It combines specialist agent instructions, governance, product processes, vendor knowledge, reusable documentation, and working product experiments in one repository.
 
 ## How the Organization Works
 
@@ -27,15 +27,42 @@ Founder
 | [`docs/document-owners.md`](docs/document-owners.md) | Primary owners, reviewers, contributors, and review cadence |
 | [`docs/process/WORKFLOW.md`](docs/process/WORKFLOW.md) | Lifecycle stages, required evidence, handoffs, and gates |
 | [`docs/process/PRODUCT-PLAYBOOK.md`](docs/process/PRODUCT-PLAYBOOK.md) | Practical standards for discovery, business cases, delivery, release, and learning |
+| [`04 Vendors/README.md`](04%20Vendors/README.md) | Shared vendor knowledge model, metadata and maintenance rules |
+| [`04 Vendors/Roaring/README.md`](04%20Vendors/Roaring/README.md) | Curated Roaring knowledge for products and integrations |
 | [`Agents/product-director.md`](Agents/product-director.md) | Operating instructions for the Product Director |
 
 ## Repository Structure
 
 ```text
-Agents/      Specialist AI role instructions
-docs/        Company context, governance, product process, and standards
-apps/        Proofs of concept and product implementations
+Agents/       Specialist AI role instructions
+docs/         Company context, governance, product process, and standards
+04 Vendors/   Curated knowledge about external platforms and data providers
+apps/         Proofs of concept and product implementations
 ```
+
+## Vendor Knowledge Model
+
+Vendor knowledge is reusable and separate from product documentation.
+
+```text
+04 Vendors/
+├── README.md
+├── _templates/
+└── Roaring/
+    ├── README.md
+    ├── 01-PLATFORM-OVERVIEW.md
+    ├── 02-AUTHENTICATION.md
+    ├── 03-API-CATALOG.md
+    ├── 04-DATA-MODEL.md
+    ├── 05-INTEGRATION-PATTERNS.md
+    ├── 06-SUPEROFFICE-MAPPING.md
+    ├── 07-ERROR-HANDLING.md
+    ├── 08-SECURITY-PRIVACY.md
+    ├── 09-KNOWN-LIMITATIONS.md
+    └── 10-REFERENCES.md
+```
+
+Official vendor documentation and signed agreements remain authoritative for endpoint details, licences, country coverage and permitted use. Product OS stores internal interpretation, architecture decisions, mappings, risks and operational knowledge.
 
 ## Product Lifecycle
 
@@ -61,6 +88,7 @@ Each stage should have a named owner, documented evidence, explicit assumptions,
 - Keep decisions traceable and documentation owned.
 - Protect privacy, security, contracts, licences, and customer confidentiality.
 - Keep supplier-specific products, credentials, data, and evidence separated when required.
+- Treat official vendor documentation as authoritative and verify endpoint-specific details before implementation.
 - Require human approval for material or irreversible decisions.
 - Improve Product OS after every completed initiative.
 
