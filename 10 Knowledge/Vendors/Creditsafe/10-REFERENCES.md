@@ -4,7 +4,7 @@ vendor: Creditsafe
 owner: Technical Writer
 reviewer: Solution Architect
 status: Active
-version: 1.0
+version: 1.1
 last_reviewed: 2026-07-14
 category: References
 domain: Creditsafe
@@ -17,6 +17,7 @@ related_documents: [README.md, 09-KNOWN-LIMITATIONS.md]
 
 ## Authoritative sources
 
+- [Creditsafe Connect API quick start](https://doc.creditsafe.com/connect-apis-catalog/product-catalog/connect-api-full/connectapi/section/introduction/quick-start)
 - current official Creditsafe developer documentation
 - product documentation and release notices
 - signed supplier and customer agreements
@@ -28,5 +29,6 @@ related_documents: [README.md, 09-KNOWN-LIMITATIONS.md]
 | Date | Reviewer | Scope | Outcome |
 |---|---|---|---|
 | 2026-07-14 | Product OS | Initial internal structure | Endpoint-level verification required before implementation |
+| 2026-07-14 | Product OS | Legacy folder merge | Preserved Connect API source link in canonical references |
 
 Do not place credentials, restricted documentation or copied proprietary schemas in this repository.
