@@ -118,12 +118,13 @@ Every maintained document must have exactly one Primary Owner, at least one Revi
 | `docs/process/PRODUCT-PLAYBOOK.md` | Product Director | Founder | All specialist leads |
 | Documentation standards | Technical Writer | Product Director | All agents |
 
-## Vendor Knowledge
+## Knowledge Governance
 
 | Document | Primary Owner | Reviewer | Contributors |
 |---|---|---|---|
-| `04 Vendors/README.md` | Product Director | Solution Architect | Technical Writer, all vendor knowledge owners |
-| `04 Vendors/_templates/VENDOR-DOCUMENT-TEMPLATE.md` | Technical Writer | Product Director | Solution Architect |
+| `10 Knowledge/README.md` | Product Director | Technical Writer | All knowledge owners |
+| `10 Knowledge/Vendors/README.md` | Product Director | Solution Architect | Technical Writer, all vendor knowledge owners |
+| `10 Knowledge/Vendors/_templates/VENDOR-DOCUMENT-TEMPLATE.md` | Technical Writer | Product Director | Solution Architect |
 | Vendor platform overview | Product Director | Solution Architect | Discovery Agent, Product Marketing |
 | Vendor authentication | Solution Architect | DevOps & Platform Agent | Backend Developer, QA Agent |
 | Vendor API capability catalog | Solution Architect | Product Director | Backend Developer, Product Marketing |
@@ -135,7 +136,7 @@ Every maintained document must have exactly one Primary Owner, at least one Revi
 | Vendor limitations register | Product Director | Solution Architect | Discovery Agent, QA Agent, Product Marketing |
 | Vendor references and review register | Technical Writer | Solution Architect | Product Director |
 
-Vendor knowledge owners are responsible for internal interpretation and freshness. Official vendor documentation, signed agreements and customer entitlements remain authoritative for API details and permitted use.
+Knowledge owners are responsible for internal interpretation and freshness. Official vendor documentation, signed agreements and customer entitlements remain authoritative for API details and permitted use.
 
 ## Ownership Rules
 
@@ -146,13 +147,13 @@ Vendor knowledge owners are responsible for internal interpretation and freshnes
 5. The Product Director resolves ownership conflicts and reviews cross-functional documents.
 6. The Founder approves changes to company vision, strategy, major investment, pricing authority, and governance.
 7. Product-specific customer and supplier data must remain separated when contracts, licences, or privacy requirements demand it.
-8. Vendor knowledge must distinguish verified facts, internal interpretations, assumptions and open questions.
-9. Retired documents must be marked as archived and replaced with a link to the current source of truth.
+8. Knowledge must distinguish verified facts, internal interpretations, assumptions and open questions.
+9. Retired documents must be archived or removed after all canonical links have been updated.
 
 ## Review Cadence
 
 - Strategic and governance documents: quarterly or after a major decision.
 - Product documents: at each lifecycle gate.
 - Operational documents: after every material platform or release change.
-- Vendor knowledge: quarterly and whenever documentation, APIs, authentication, commercial rights, coverage or contracts change.
+- Knowledge documents: quarterly and whenever authoritative sources, APIs, authentication, commercial rights, coverage or contracts change.
 - Customer and market documents: whenever new evidence changes an assumption.
