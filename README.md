@@ -10,8 +10,10 @@ Product OS is an operating system for an AI-assisted product organization. It co
 | [`apps/`](apps/README.md) | Customer-facing products, proofs of concept and implementations |
 | [`platform/`](platform/README.md) | Reusable internal technical foundations |
 | [`10 Knowledge/`](10%20Knowledge/README.md) | Reusable vendor and domain knowledge |
-| [`Agents/`](Agents/product-director.md) | Specialist AI role instructions |
-| [`docs/`](docs/process/WORKFLOW.md) | Governance, strategy, ownership and product process |
+| [`Agents/`](Agents/README.md) | Specialist AI role instructions |
+| [`docs/`](docs/README.md) | Governance, strategy, ownership and product process |
+
+The canonical folder contract is defined in [`docs/REPOSITORY-ARCHITECTURE.md`](docs/REPOSITORY-ARCHITECTURE.md). Verified cleanup decisions are recorded in [`docs/REPOSITORY-AUDIT.md`](docs/REPOSITORY-AUDIT.md).
 
 ## Current Projects
 
@@ -63,6 +65,8 @@ A folder should exist only when it has a clear owner and useful content. Empty p
 
 ## Governance
 
+- [Repository architecture](docs/REPOSITORY-ARCHITECTURE.md)
+- [Repository audit](docs/REPOSITORY-AUDIT.md)
 - [Team structure](docs/company/TEAM-STRUCTURE.md)
 - [AI governance](docs/company/AI-GOVERNANCE.md)
 - [Document ownership](docs/document-owners.md)
