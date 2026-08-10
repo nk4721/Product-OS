@@ -2,6 +2,35 @@
 
 This folder is the portfolio index for active and completed initiatives. It does not duplicate source code or full product documentation. Each project links to the place where its implementation, business case, strategy, platform dependencies and reusable knowledge live.
 
+## Vanthom Intelligence
+
+**Type:** Customer-facing AI product concept  
+**Status:** Intake and discovery  
+**Purpose:** Turn approved business, product, customer and operational context into traceable decision briefs, recommendations and next actions.
+
+### Project assets
+
+- [Project brief](../apps/vanthom-intelligence/PROJECT.md)
+- [Discovery plan](../apps/vanthom-intelligence/DISCOVERY.md)
+- [Positioning and messaging](../apps/vanthom-intelligence/POSITIONING.md)
+- [Product workflow](../docs/process/WORKFLOW.md)
+- [AI governance](../docs/company/AI-GOVERNANCE.md)
+- [Supplier-specific integration strategy](../docs/strategy/integration-app-suite.md)
+
+### Dependencies
+
+- validated recurring decision workflow and target segment
+- authorised source access and explicit data boundaries
+- human accountability and approval model
+- source traceability, security, privacy and audit requirements
+- measurable pilot outcome and identified economic buyer
+
+### Current decision
+
+Proceed with focused discovery. Validate one narrow decision workflow, its buyer, data rights and measurable value before selecting features or starting implementation.
+
+---
+
 ## CRM Usage Analytics
 
 **Type:** Customer-facing product experiment  
