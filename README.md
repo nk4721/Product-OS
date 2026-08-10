@@ -17,6 +17,15 @@ The canonical folder contract is defined in [`docs/REPOSITORY-ARCHITECTURE.md`](
 
 ## Current Projects
 
+### Vanthom Intelligence
+
+A proposed AI-powered decision-support layer that turns approved context into traceable insights, recommendations and next actions.
+
+- [Portfolio entry](projects/README.md#vanthom-intelligence)
+- [Project brief](apps/vanthom-intelligence/PROJECT.md)
+- [Discovery plan](apps/vanthom-intelligence/DISCOVERY.md)
+- [Positioning and messaging](apps/vanthom-intelligence/POSITIONING.md)
+
 ### CRM Usage Analytics
 
 A proof of concept and business case for measuring SuperOffice CRM adoption by user and team.
